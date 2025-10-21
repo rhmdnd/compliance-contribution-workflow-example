@@ -1,0 +1,12 @@
+apiVersion: compliance.openshift.io/v1alpha1
+kind: Profile
+metadata:
+  name: openshift-virtualization-benchmark
+  namespace: openshift-compliance
+spec:
+  description: Security checks for OpenShift Virtualization platform
+  id: openshift-virtualization
+  version: 1.0.0
+  rules:
+    - kubevirt-nonroot-feature-gate-is-enabled
+  title: Platform checks for OpenShift Virtualization
